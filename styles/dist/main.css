@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap");
+body {
+  margin: 0;
+  background-color: rgb(228, 228, 228);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+div#page {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 20px;
+  align-content: center;
+}
+
+p.title {
+  margin: 0px;
+  font-family: "Fira Code", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(92, 92, 92);
+}
+
+input#apiKeyInput {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  outline: none;
+  background-color: rgb(220, 239, 237);
+  border: 3px solid rgb(84, 138, 133);
+  border-radius: 5px;
+  font-family: "Fira Code";
+  font-size: 20px;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+input#apiKeyInput:hover {
+  background-color: rgb(172, 219, 214);
+  border: 3px solid rgb(57, 114, 108);
+}
+input#apiKeyInput:active {
+  background-color: rgb(172, 219, 214);
+  border: 3px solid rgb(57, 114, 108);
+  transition-duration: 100ms;
+}
+
+textarea#textInput {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  border: 3px solid rgb(134, 181, 177);
+  border-radius: 5px;
+  font-family: "Mukta";
+  font-size: 15px;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+textarea#textInput:focus {
+  background-color: rgb(238, 246, 245);
+  border: 3px solid rgb(84, 138, 133);
+}
+
+form#controlBox {
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+form#controlBox input {
+  box-sizing: border-box;
+  height: 35px;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: white;
+  outline: none;
+  background-color: rgb(220, 239, 237);
+  border: 3px solid rgb(84, 138, 133);
+  border-radius: 5px;
+  font-family: "Fira Code";
+  font-size: 15px;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+form#controlBox input:hover {
+  background-color: rgb(172, 219, 214);
+  border: 3px solid rgb(57, 114, 108);
+}
+form#controlBox input:active {
+  background-color: rgb(188, 221, 218);
+  border: 3px solid rgb(71, 124, 118);
+  transition-duration: 100ms;
+}
+form#controlBox input#languageCode {
+  width: 80px;
+  text-align: center;
+}
+form#controlBox input#voiceName {
+  width: 200px;
+}
+form#controlBox input#speedInput, form#controlBox input#pitchInput {
+  width: 60px;
+  text-align: center;
+}
+form#controlBox #synthesizeButon {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+  outline: none;
+  background-color: rgb(117, 173, 167);
+  border: 3px solid rgb(71, 125, 120);
+  border-radius: 5px;
+  color: rgb(3, 57, 51);
+  font-family: "Mukta";
+  font-size: 15px;
+  font-weight: bold;
+  transition-timing-function: ease;
+  transition-duration: 200ms;
+}
+form#controlBox #synthesizeButon:hover {
+  cursor: pointer;
+  background-color: rgb(150, 202, 197);
+  border: 3px solid rgb(89, 152, 146);
+  color: rgb(8, 79, 70);
+}
+form#controlBox #synthesizeButon:active {
+  background-color: rgb(117, 173, 167);
+  border: 3px solid rgb(71, 125, 120);
+  transition-duration: 100ms;
+}
+form#controlBox div#audioPlayerDiv {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(169, 207, 203);
+  border-radius: 5px;
+}/*# sourceMappingURL=main.css.map */

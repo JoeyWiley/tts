@@ -1,0 +1,14 @@
+{
+	"name": "natural-selection",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./scripts/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Joey Wiley",
+	"license": "ISC",
+	"dependencies": {
+		"@google-cloud/text-to-speech": "^5.0.1"
+	}
+}

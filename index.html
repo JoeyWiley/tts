@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<link href="styles/dist/main.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Text to Speech</title>
+	</head>
+	<body>
+		<div id="page">
+			<p class="title">API KEY</p>
+			<input id="apiKeyInput" type="password" placeholder="Valid Google API Key" onfocus="keyObfuscate(false)" onblur="keyObfuscate(true)" />
+
+			<textarea id="textInput" data-gramm="false"></textarea>
+
+			<form id="controlBox">
+				<div style="display: flex; background-color: rgb(238, 246, 245); border-radius: 5px; padding: 5px">
+					<div>
+						<p class="title">LANGUAGE</p>
+						<input id="languageCode" placeholder="en-US" />
+					</div>
+					<div>
+						<a href="https://cloud.google.com/text-to-speech/docs/voices" target="_blank" style="color: rgb(92, 92, 92)"><p class="title">VOICE</p></a>
+						<input id="voiceName" placeholder="en-US-Neural2-A" />
+					</div>
+					<div>
+						<p class="title">PITCH</p>
+						<input type="number" id="pitchInput" type="number" step="0.1" placeholder="1.0" />
+					</div>
+					<div>
+						<p class="title">SPEED</p>
+						<input type="number" id="speedInput" type="number" step="0.1" placeholder="1.0" />
+					</div>
+				</div>
+				<input id="synthesizeButon" type="submit" value="SYNTHESIZE" />
+				<div id="audioPlayerDiv">
+					<audio id="audioPlayer" controls>Your browser does not support the audio tag.</audio>
+				</div>
+			</form>
+		</div>
+		<script src="scripts/index.js"></script>
+	</body>
+</html>
